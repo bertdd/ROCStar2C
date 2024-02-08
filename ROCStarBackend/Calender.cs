@@ -1,7 +1,5 @@
-﻿
+﻿namespace ROCStarBackend;
 
-namespace ROCStarBackend;
-
-internal class Calender
+public class Calender
 {
 }
