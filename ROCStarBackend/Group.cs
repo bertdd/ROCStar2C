@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ROCStarBackend
 {
-    internal class Group
+    public class Group
     {
     }
 }
