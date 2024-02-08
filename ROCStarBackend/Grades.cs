@@ -1,9 +1,9 @@
 ﻿namespace ROCStarBackend;
 
 /// <summary>
-/// Represents the data for a teacher
+/// Represents the data for the grades
 /// </summary>
-public class Teacher
+public class Grades
 {
 
 }
