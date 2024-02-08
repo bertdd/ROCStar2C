@@ -1,6 +1,5 @@
-﻿namespace ROCStarBackend
+﻿namespace ROCStarBackend;
+
+public class Class
 {
-    internal class klas
-    {
-    }
 }
