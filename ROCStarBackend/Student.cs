@@ -1,9 +1,11 @@
-﻿namespace ROCStarBackend;
+﻿using System.Xml.Linq;
+
+namespace ROCStarBackend;
 
 /// <summary>
 /// Represents the data for a student
 /// </summary>
-public class Student
+public class Student(int id, string name) : Person(id, name)
 {
-  public int Id { get; set; }
+  
 }
