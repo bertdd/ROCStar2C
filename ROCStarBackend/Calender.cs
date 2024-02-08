@@ -1,5 +1,5 @@
 ﻿namespace ROCStarBackend;
 
-public class Classroom
+public class Calender
 {
 }
