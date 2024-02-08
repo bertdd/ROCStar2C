@@ -1,6 +1,4 @@
-﻿
-
-namespace ROCStarBackend;
+﻿namespace ROCStarBackend;
 
 public class ClassRoom
 {
