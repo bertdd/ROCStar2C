@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ROCStarBackend;
 
-namespace ROCStarBackend
+public class Group
 {
-    public class Group
-    {
-    }
+  public List<Student> Students { get; } = [];
 }
