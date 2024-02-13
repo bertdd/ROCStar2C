@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace ROCStarBackend;
+﻿namespace ROCStarBackend;
 
 /// <summary>
 /// Represents the data for a student
