@@ -5,8 +5,7 @@
 /// </summary>
 public class Student : Person
 {
- 
-
   public DateTime Registered {  get; set; }
 
+  public string? PreviousSchool { get; set; }
 }
