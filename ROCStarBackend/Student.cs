@@ -7,4 +7,6 @@ public class Student : Person
 {
  
 
+  public DateTime Registered {  get; set; }
+
 }
