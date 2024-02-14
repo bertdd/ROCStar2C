@@ -1,5 +1,5 @@
 ﻿namespace ROCStarBackend;
 
-public class Course
+public class Grade
 {
 }
