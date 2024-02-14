@@ -5,9 +5,9 @@
 /// </summary>
 public class Student : Person
 {
-  public DateTime Registered {  get; set; }
-  
-    public string mentor { get; set; }
+  public DateTime Registered { get; set; }
+
+  public string? Mentor { get; set; }
 
   public string? PreviousSchool { get; set; }
 }
