@@ -30,9 +30,11 @@ public class ROCStarTests
   [TestMethod]
   public void TestCreateGroup()
   {
-    var group = new Group("group1");
+    const string id = "OITSDO2C";
+    var group = new Group(id);
     Console.WriteLine(group.Id);
     Assert.IsNotNull(group);
-    Assert.AreEqual(group.Id, "group1");
+    Assert.AreEqual(group.Id, id);
+    Assert.IsTrue(group.Students.Count() == 0);
   }
 }
