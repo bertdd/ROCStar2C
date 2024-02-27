@@ -1,4 +1,5 @@
-﻿namespace ROCStarBackend;
+﻿
+namespace ROCStarBackend;
 
 public class Group(string id)
 {
@@ -6,5 +7,9 @@ public class Group(string id)
 
   public List<Student> Students { get; private set; } = [];
 
-  public override string ToString() => Id;
+    public void Add(Student student) => Students.Add(student);
+
+    public void Remove(Student student) => Students.Remove(student);
+
+    public override string ToString() => Id;
 }

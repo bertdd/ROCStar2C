@@ -39,8 +39,20 @@ public class ROCStarTests
   }
 
   [TestMethod]
-  public void AddStudentToGroup()
-  {
+  public void AddStudentToGroup() {
+        const string id = "OITSDO2C";
+        var group = new Group(id);
+        var student = new Student(255, "Milan");
+        var teacher = new Student(2232, "Bert");
 
+        group.Add(student);
+
+        group.Add(teacher);
+
+        group.Remove(teacher);
+
+        Assert.IsFalse(group.Students.Contains(teacher));
+
+        Assert.IsTrue(group.Students.Contains(student));
   }
 }
