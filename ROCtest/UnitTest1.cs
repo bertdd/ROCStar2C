@@ -37,4 +37,10 @@ public class ROCStarTests
     Assert.AreEqual(group.Id, id);
     Assert.IsTrue(group.Students.Count() == 0);
   }
+
+  [TestMethod]
+  public void AddStudentToGroup()
+  {
+
+  }
 }
