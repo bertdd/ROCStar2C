@@ -26,5 +26,10 @@ public class ROCStarTests
         Assert.AreEqual(classroom.Id, "A319C");
         Console.WriteLine(classroom.Id);
     }
-
+    [TestMethod]
+    public void TestCreateGroup()
+    {
+        var group = new Group("group1");
+        Console.WriteLine(group.Id);
+    }
 }
