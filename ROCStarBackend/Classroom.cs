@@ -1,6 +1,6 @@
 ﻿namespace ROCStarBackend;
 
-public class Teacher
+public class Classroom
 {
-
+  
 }
