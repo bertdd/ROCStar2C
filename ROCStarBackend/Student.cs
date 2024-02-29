@@ -3,6 +3,6 @@
 /// <summary>
 /// Represents the data for a student
 /// </summary>
-public class Student
+public class Student(string name) : Person(name)
 {
 }
