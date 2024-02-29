@@ -1,0 +1,18 @@
+﻿@page "/groep"
+@using ROCStarBackend;
+
+<h3>Groep @group.Id</h3>
+
+<table>
+  <thead><th>Naam</th></thead>
+  @foreach (var student in group.Students)
+  {
+    <tr>
+      <td>@student.Name</td>
+    </tr>
+  }
+</table>
+
+@code {
+  Group group = TestData.GetTestGroup();
+}
