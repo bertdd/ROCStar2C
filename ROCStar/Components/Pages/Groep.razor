@@ -4,13 +4,16 @@
 <h3>Groep @group.Id</h3>
 
 <table>
-  <thead><th>Naam</th></thead>
-  @foreach (var student in group.Students)
-  {
-    <tr>
-      <td>@student.Name</td>
-    </tr>
-  }
+  <thead>
+  <th>Naam</th></thead>
+  <tbody>
+    @foreach (var student in group.Students)
+    {
+      <tr>
+        <td>@student.Name</td>
+      </tr>
+    }
+  </tbody>
 </table>
 
 @code {
