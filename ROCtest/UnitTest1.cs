@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic;
 using ROCStarBackend;
 
 namespace ROCtest;
@@ -53,5 +54,17 @@ public class ROCStarTests
 
         Assert.IsFalse(group.Students.Contains(teacher));
 
+  }
+
+  [TestMethod]
+  public void TestAge()
+  {
+    var student = new Student(5, "test")
+    {
+      BirthDate = new DateOnly(2004, 2, 20)
+    };
+    var age = student.Age();
+    Console.WriteLine(age);
+    Assert.AreEqual(20, age);
   }
 }
