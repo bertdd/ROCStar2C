@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ROCStar", "ROCStar\ROCStar.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ROCStarBackend", "ROCStarBackend\ROCStarBackend.csproj", "{3F01EE5A-F7E5-4C58-B499-102B70EBEC19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROCStarTesting", "ROCStarTesting\ROCStarTesting.csproj", "{A025D1FF-50BB-4992-8F46-39795339614D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ROCStarTesting", "ROCStarTesting\ROCStarTesting.csproj", "{A025D1FF-50BB-4992-8F46-39795339614D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

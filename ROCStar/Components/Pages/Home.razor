@@ -1,7 +1,11 @@
 ﻿@page "/"
+@using ROCStarBackend;
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<b>@group.Id</b>
 
-Welcome to your new app.
+@code
+{
+  Group group = TestData.TestClass;
+}

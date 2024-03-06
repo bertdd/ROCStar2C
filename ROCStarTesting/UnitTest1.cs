@@ -30,4 +30,12 @@ public class UnitTest1
 
     Assert.AreEqual(person.BirthDate.Year, 2015);
   }
+
+  [TestMethod]
+  public void TestSampleData()
+  {
+    var data = TestData.TestClass;
+    Assert.AreEqual("OITSDO2A", data.Id);
+    Assert.AreEqual(4, data.Students.Count);
+  }
 }
