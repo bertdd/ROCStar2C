@@ -1,7 +1,10 @@
 ﻿@page "/"
+@using ROCStarBackend
 
-<h3>Class</h3>
+<h3>Klas @group.Id</h3>
+
+Studenten: @group.Students.Count
 
 @code {
-
+  Group group = SampleClass.OITSDO2C;
 }

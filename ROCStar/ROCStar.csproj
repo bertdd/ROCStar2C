@@ -10,4 +10,8 @@
     <Folder Include="Documents\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ROCStarBackend\ROCStarBackend.csproj" />
+  </ItemGroup>
+
 </Project>
