@@ -3,7 +3,12 @@
 
 <h3>Klas @group.Id</h3>
 
-Studenten: @group.Students.Count
+Studenten: @group.Students.Count<br/>
+
+@foreach (var student in group.Students)
+{
+  @student.Name<br/>
+}
 
 @code {
   Group group = SampleClass.OITSDO2C;
