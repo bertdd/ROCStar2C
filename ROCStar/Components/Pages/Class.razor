@@ -3,21 +3,23 @@
 
 <h3>Klas @group.Id</h3>
 
-Studenten: @group.Students.Count<br/>
+Studenten: @group.Students.Count
+<br />
 
 <table>
-@foreach (var student in group.Students)
-{ <tr>
+  @foreach (var student in group.Students)
+  {
+    <tr>
       <td width="50" align="center">@student.Id</td>
       <td width="200">@student.Name</td>
       <td>
-      @if (student.BirthDate != DateOnly.MinValue)
-      {
-        @student.BirthDate
-      }
+        @if (student.BirthDate != DateOnly.MinValue)
+        {
+          @student.BirthDate
+        }
       </td>
-  </tr>
-}
+    </tr>
+  }
 </table>
 
 @code {
