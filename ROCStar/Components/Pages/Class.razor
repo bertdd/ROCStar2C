@@ -5,10 +5,20 @@
 
 Studenten: @group.Students.Count<br/>
 
+<table>
 @foreach (var student in group.Students)
-{
-  @student.Name<br/>
+{ <tr>
+      <td width="50" align="center">@student.Id</td>
+      <td width="200">@student.Name</td>
+      <td>
+      @if (student.BirthDate != DateOnly.MinValue)
+      {
+        @student.BirthDate
+      }
+      </td>
+  </tr>
 }
+</table>
 
 @code {
   Group group = SampleClass.OITSDO2C;
