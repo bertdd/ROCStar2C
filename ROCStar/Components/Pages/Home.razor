@@ -5,15 +5,35 @@
 
 <b>@group.Id</b>
 
-@foreach (var student in group.Students)
-{
+<table>
+  <thead>
     <tr>
-        <td>@student.Id</td>
-        <td>@student.Name</td>
+      <th @onclick="() => Sort(0)">Id</th>
+      <th @onclick="() => Sort(1)">Naam</th>
+      <th @onclick="() => Sort(2)">Geboortedatum</th>
     </tr>
-}
+  </thead>
+  @foreach (var student in group.Students)
+  {
+    <tr>
+      <td>@student.Id</td>
+      <td>@student.Name</td>
+      <td>
+        @if (student.BirthDate != DateOnly.MinValue)
+        {
+          @student.BirthDate
+        }
+      </td>
+    </tr>
+  }
+</table>
 
 @code
 {
   Group group = TestData.TestClass;
+
+  void Sort(int column)
+  {
+    group.Students.Sort();
+  }
 }
