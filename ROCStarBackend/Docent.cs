@@ -1,6 +1,6 @@
 ﻿namespace ROCStarBackend;
 
-public class Docent(string name) : Person(name)
+public class Docent(int id, string name) : Person(id, name)
 {
   public decimal Salary { get; set; }
 }
