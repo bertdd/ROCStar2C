@@ -17,7 +17,9 @@ public static class SampleClass
         {
           BirthDate = new DateOnly(2004, 08, 22)
         },
-        new Student(45, "Don")
+        new Student(45, "Don") { BirthDate = new DateOnly(1998, 11, 2)},
+        new Student(13, "Erencan")
       }
     };
+
 }

@@ -7,6 +7,13 @@ Studenten: @group.Students.Count
 <br />
 
 <table>
+  <thead>
+    <tr>
+      <th @onclick="() => group.Sort(0)">Id</th>
+      <th @onclick="() => group.Sort(1)">Naam</th>
+      <th @onclick="() => group.Sort(2)">Geboortedatum</th>
+    </tr>
+  </thead>
   @foreach (var student in group.Students)
   {
     <tr>
@@ -23,5 +30,5 @@ Studenten: @group.Students.Count
 </table>
 
 @code {
-  Group group = SampleClass.OITSDO2C;
+    Group group = SampleClass.OITSDO2C;
 }
