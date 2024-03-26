@@ -2,7 +2,7 @@
 
 public class TestData
 {
-  public static Group GetTestGroup()
+  public static Group GetGroup()
   
     => new("OITSDO2E")
     {
