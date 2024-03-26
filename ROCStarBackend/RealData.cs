@@ -25,9 +25,7 @@ public class RealData
     using var reader = command.ExecuteReader();
     while (reader.Read())
     {
-      group.Add(new Student(
-                      reader.GetInt32("id"),
-                      reader.GetString("name")));
+      group.Add(new Student(reader.GetInt32("id"), reader.GetString("name")));
     }
 
     return group;
