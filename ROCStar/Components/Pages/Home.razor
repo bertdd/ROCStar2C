@@ -1,28 +1,39 @@
 ﻿@page "/"
 @using ROCStarBackend;
 
-<PageTitle>Home</PageTitle> 
+<PageTitle>Home</PageTitle>
 
 <b>@group.Id</b>
 
 <table>
-    <thead>name</thead>
+    <thead>
+        <tr>
+            <th @onclick="() => Sort(0)">Id</th>
+            <th @onclick="() => Sort(1)">Naam</th>
+            <th @onclick="() => Sort(2)">Geboortedatum</th>
+        </tr>
+    </thead>
     @foreach (var student in group.Students)
     {
-        
         <tr>
+            <td>@student.Id</td>
+            <td>@student.Name</td>
             <td>
-                @student.Name
-            </td>
-            <td>
-                @student.Id
+                @if (student.BirthDate != DateOnly.MinValue)
+                {
+                    @student.BirthDate
+                }
             </td>
         </tr>
-
     }
 </table>
 
 @code
 {
-    Group group = TestData.TestClass;
+    Group group = RealData.GetGroup();
+
+    void Sort(int column)
+    {
+        group.Students.Sort();
+    }
 }
