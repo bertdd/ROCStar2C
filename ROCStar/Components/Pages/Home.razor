@@ -5,7 +5,24 @@
 
 <b>@group.Id</b>
 
+<table>
+    <thead>name</thead>
+    @foreach (var student in group.Students)
+    {
+        
+        <tr>
+            <td>
+                @student.Name
+            </td>
+            <td>
+                @student.Id
+            </td>
+        </tr>
+
+    }
+</table>
+
 @code
 {
-  Group group = TestData.TestClass;
+    Group group = TestData.TestClass;
 }
